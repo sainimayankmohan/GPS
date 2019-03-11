@@ -1,0 +1,12 @@
+#ifndef DCMAPKIT_GLOBAL_H
+#define DCMAPKIT_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(DCMAPKIT_LIBRARY)
+#  define DCMAPKITSHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define DCMAPKITSHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // DCMAPKIT_GLOBAL_H
